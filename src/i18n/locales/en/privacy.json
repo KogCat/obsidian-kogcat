@@ -1,0 +1,8 @@
+{
+  "title": "Kog Cat uses your LLM",
+  "body": "When the engine flags an LLM response, KogCat sends the original text + KB signals to the chat model you configured in settings to produce an advisor answer.\n\nNo data leaves your machine except via the LLM provider you configured. The local engine (om-core) does not call any LLM itself.",
+  "cta": {
+    "agree": "I understand, continue",
+    "cancel": "Cancel"
+  }
+}

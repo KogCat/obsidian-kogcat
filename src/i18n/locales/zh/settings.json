@@ -1,0 +1,274 @@
+{
+  "language": {
+    "name": "语言",
+    "desc": "插件 UI 语言。\"自动\"将跟随 Obsidian 界面语言。",
+    "options": {
+      "auto": "自动",
+      "en": "English",
+      "zh": "中文"
+    }
+  },
+  "kogcat": {
+    "header": "KogCat",
+    "answerMode": {
+      "name": "回答模式",
+      "desc": "选择「快速回答」以优先速度，选择「参谋回答」让 KogCat 主导回复。",
+      "options": {
+        "quick": "快速回答",
+        "advisor": "参谋回答",
+        "off": "关闭"
+      }
+    },
+    "engine": {
+      "name": "引擎",
+      "desc": "重启本地引擎、检查更新或打开日志文件。",
+      "restart": "重启",
+      "checkUpdate": "检查更新",
+      "openLog": "打开日志"
+    },
+    "advanced": {
+      "name": "高级引擎设置",
+      "desc": "默认由插件自动管理。仅在你自行运行 om-core 或需要自定义二进制 / 端口时打开。",
+      "show": "展开",
+      "hide": "收起"
+    },
+    "external": {
+      "name": "使用外部引擎",
+      "desc": "跳过插件自带引擎的启动，连接已经运行在端口 {{port}} 的 om-core。"
+    },
+    "binaryPath": {
+      "name": "二进制路径",
+      "desc": "覆盖默认管理的二进制。留空则使用自动下载的引擎。",
+      "placeholder": "(自动管理)"
+    },
+    "port": {
+      "name": "端口",
+      "desc": "本地引擎的 HTTP 端口。若端口被占用，KogCat 会自动改用空闲端口。"
+    }
+  },
+  "chat": {
+    "header": "对话",
+    "chatModel": {
+      "name": "对话模型",
+      "desc": "选择用于对话的模型。",
+      "recommendedSuffix": "（推荐）"
+    },
+    "applyModel": {
+      "name": "Apply 模型",
+      "desc": "选择用于 Apply 功能的模型。"
+    },
+    "systemPrompt": {
+      "name": "System prompt",
+      "desc": "该 prompt 会被添加到每次对话的开头。"
+    },
+    "includeCurrentFile": {
+      "name": "包含当前文件",
+      "desc": "自动把当前文件的内容包含进对话。"
+    },
+    "enableTools": {
+      "name": "启用工具",
+      "desc": "允许 AI 使用 MCP 工具。"
+    },
+    "maxAutoIterations": {
+      "name": "最大自动工具调用数",
+      "desc": "在不询问用户的前提下可连续进行的工具调用最大次数。值越大成本可能越高，因为每次工具调用都会消耗额外 token。"
+    }
+  },
+  "rag": {
+    "header": "RAG",
+    "embeddingModel": {
+      "name": "Embedding 模型",
+      "desc": "选择用于 embedding 的模型"
+    },
+    "includePatterns": {
+      "name": "包含模式",
+      "desc": "指定索引文件的 glob 模式（每行一条）。例如：'notes/**' 表示 notes 文件夹下所有文件。留空则包含全部文件。修改后需要执行『重建 vault 全量索引』。",
+      "test": "测试模式"
+    },
+    "excludePatterns": {
+      "name": "排除模式",
+      "desc": "指定排除索引的 glob 模式（每行一条）。例如：'notes/**' 表示 notes 文件夹下所有文件。留空则不排除任何文件。修改后需要执行『重建 vault 全量索引』。",
+      "test": "测试模式"
+    },
+    "chunkSize": {
+      "name": "切片大小",
+      "desc": "文本切片大小。修改后请通过『重建 vault 全量索引』命令重新索引。"
+    },
+    "thresholdTokens": {
+      "name": "Token 阈值",
+      "desc": "切换到 RAG 之前的最大 token 数。如果引用文件 token 总数超过该值，将改用 RAG 而非直接包含全部文件内容。"
+    },
+    "minSimilarity": {
+      "name": "最低相似度",
+      "desc": "RAG 结果的最低相似度分数。值越高返回的结果越相关，但数量可能更少。"
+    },
+    "limit": {
+      "name": "数量上限",
+      "desc": "Prompt 中包含的 RAG 结果数量上限。值越大上下文越多，但 token 使用也越多。"
+    },
+    "manageDb": {
+      "name": "管理 Embedding 数据库",
+      "action": "管理"
+    }
+  },
+  "providers": {
+    "header": "Providers",
+    "desc": "配置 API providers（按用量计费）。",
+    "addCustom": "添加自定义 provider",
+    "apiKeySet": "设置 API 密钥",
+    "apiKeyMasked": "••••••••"
+  },
+  "models": {
+    "header": "Models",
+    "desc": "内置模型仅作快捷方式。使用「添加自定义模型」可手动输入任何已配置 provider 的模型 ID。",
+    "chatModels": {
+      "header": "Chat Models",
+      "desc": "用于对话与 Apply 的模型",
+      "addCustom": "添加自定义模型"
+    },
+    "embeddingModels": {
+      "header": "Embedding Models",
+      "desc": "用于为 RAG 生成 embedding 的模型",
+      "addCustom": "添加自定义模型",
+      "providerId": "Provider ID",
+      "dimension": "维度"
+    },
+    "noSettings": "该模型没有可配置项"
+  },
+  "modelOptions": {
+    "openai": {
+      "reasoning": {
+        "name": "Reasoning",
+        "desc": "启用模型的 reasoning。适用于 o 系列模型（如 o3、o4-mini）和 GPT-5 模型。"
+      },
+      "reasoningEffort": {
+        "name": "Reasoning Effort",
+        "desc": "控制模型在回复前的思考量。默认值为 \"medium\"。"
+      }
+    },
+    "openaiPlan": {
+      "reasoningEffort": {
+        "name": "Reasoning Effort",
+        "desc": "控制模型在回复前的思考量。",
+        "notSet": "未设置（采用 OpenAI 默认）"
+      },
+      "reasoningSummary": {
+        "name": "Reasoning Summary",
+        "desc": "可选的 reasoning 摘要。",
+        "notSet": "未设置（采用 OpenAI 默认）"
+      }
+    },
+    "anthropic": {
+      "extendedThinking": {
+        "name": "Extended Thinking",
+        "desc": "启用 Claude 的 extended thinking。适用于 Claude Sonnet 3.7+ 与 Claude Opus 4.0+。"
+      },
+      "budgetTokens": {
+        "name": "Budget Tokens",
+        "desc": "Claude 可用于 thinking 的最大 token 数。至少 1024。",
+        "placeholder": "token 数"
+      }
+    },
+    "gemini": {
+      "thinkingSettings": {
+        "name": "Thinking 设置",
+        "desc": "自定义 thinking 等级或预算。停用时模型遵循默认行为（多数 Gemini 2.5 / 3 模型为动态 thinking）。"
+      },
+      "controlMode": {
+        "name": "控制模式",
+        "desc": "Gemini 3 模型用 'Level'，Gemini 2.5 模型用 'Budget'。",
+        "level": "Level（Gemini 3）",
+        "budget": "Budget（Gemini 2.5）"
+      },
+      "thinkingLevel": {
+        "name": "Thinking 等级",
+        "desc": "控制推理深度。Gemini 3 默认为 'high'。"
+      },
+      "thinkingBudget": {
+        "name": "Thinking Budget",
+        "desc": "thinking 的 token 预算。-1 表示动态，0 表示禁用。",
+        "placeholder": "-1 表示动态"
+      },
+      "includeThoughts": {
+        "name": "包含思考摘要",
+        "desc": "显示模型 reasoning 过程的摘要。启用后会增加 token 消耗。"
+      }
+    },
+    "perplexity": {
+      "searchContextSize": {
+        "name": "Search Context Size",
+        "desc": "决定模型检索的搜索上下文规模。选择 \"low\" 上下文最小、成本最低；\"medium\" 为均衡；\"high\" 上下文最大、成本最高。默认为 \"low\"。"
+      }
+    }
+  },
+  "mcp": {
+    "header": "MCP（Model Context Pool）",
+    "warningLabel": "警告：",
+    "warning": "使用工具时，工具响应会被传给语言模型（LLM）。如果工具结果包含大量内容，会显著增加 LLM 用量和成本。在启用或使用可能返回大段输出的工具时请留意。",
+    "notSupported": "移动设备暂不支持 MCP",
+    "subHeader": "MCP 服务器",
+    "addServer": "添加 MCP 服务器",
+    "noServers": "没有 MCP 服务器",
+    "table": {
+      "server": "服务器",
+      "status": "状态",
+      "enabled": "启用",
+      "actions": "操作"
+    },
+    "tool": {
+      "enabled": "已启用",
+      "autoExecute": "自动执行",
+      "toolsHeader": "工具",
+      "errorHeader": "错误"
+    },
+    "status": {
+      "connected": "已连接",
+      "connecting": "连接中…",
+      "error": "错误",
+      "disconnected": "未连接"
+    }
+  },
+  "packs": {
+    "header": "知识包",
+    "engineUnavailable": "KogCat 引擎不可用 — 请先启动引擎以管理 pack。",
+    "loading": "加载中…",
+    "error": "错误：{{message}}",
+    "noPacks": "尚未安装任何 pack",
+    "installing": "安装中…",
+    "installOrUpgrade": "安装 / 升级",
+    "noFiles": "将 <code>.ompack</code> 文件放入 vault 即可安装。",
+    "noManifest": "磁盘上无 manifest"
+  },
+  "templates": {
+    "header": "Prompt 模板",
+    "howTo": "<strong>用法：</strong>创建可复用内容的模板，便于在对话中快速插入。在对话输入框输入 <code>/模板名</code> 触发插入。也可以在输入框中选中文本，会出现「创建模板」按钮以快速创建。",
+    "saved": "已保存的模板",
+    "addTemplate": "添加 Prompt 模板",
+    "loading": "正在加载模板...",
+    "empty": "没有模板"
+  },
+  "planConnections": {
+    "header": "连接你的订阅",
+    "desc": "使用订阅而非按 API key 计费。已连接的订阅会消耗你套餐中的额度（OpenAI 走 Codex，Gemini 走 Gemini Code Assist）。订阅不支持移动端。",
+    "openai": {
+      "title": "OpenAI",
+      "desc": "使用你的 ChatGPT 套餐中的 Codex 额度。",
+      "usageLink": "查看 Codex 用量与限额"
+    },
+    "gemini": {
+      "title": "Gemini",
+      "descPrefix": "使用你的 Google AI Plan 中的 Gemini Code Assist 额度。",
+      "descSuffix": "在 Gemini CLI 中执行以下命令查看用量"
+    },
+    "connect": "连接",
+    "disconnect": "断开"
+  },
+  "etc": {
+    "header": "其他",
+    "reset": {
+      "name": "重置设置",
+      "desc": "将所有设置恢复为默认值",
+      "action": "重置"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "generic": "错误：{{message}}",
+  "searchContextSizeInvalid": "Search context size 必须是 \"low\"、\"medium\" 或 \"high\"",
+  "templateLoadList": "加载模板列表失败，请尝试刷新设置页。"
+}

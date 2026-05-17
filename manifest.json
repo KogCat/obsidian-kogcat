@@ -1,0 +1,10 @@
+{
+  "id": "kog-cat",
+  "name": "KogCat",
+  "version": "0.2.2",
+  "minAppVersion": "1.0.0",
+  "description": "Calibrate AI responses against a knowledge base of cognitive biases, logic fallacies, and decision frameworks.",
+  "author": "KogCat",
+  "authorUrl": "https://github.com/KogCat",
+  "isDesktopOnly": true
+}

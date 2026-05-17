@@ -1,0 +1,9 @@
+{
+  "calibrating": "校准中…",
+  "composingAdvisor": "正在准备 KogCat 回复…",
+  "checked": "KogCat 已检查",
+  "kbConfirmed": "知识库确认",
+  "kbUncovered": "知识库未覆盖",
+  "unavailableNoLlm": "校准不可用 — 请配置 LLM",
+  "failed": "校准失败"
+}

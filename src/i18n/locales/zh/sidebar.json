@@ -1,0 +1,21 @@
+{
+  "title": "Kog Cat",
+  "section": {
+    "engine": "引擎",
+    "answerMode": "回答模式"
+  },
+  "answerMode": {
+    "quick": "快速",
+    "advisor": "参谋",
+    "off": "关闭"
+  },
+  "engine": {
+    "running": "运行中",
+    "stopped": "已停止",
+    "starting": "启动中…",
+    "failed": "失败",
+    "refresh": "刷新",
+    "openLog": "打开日志",
+    "restart": "重启"
+  }
+}

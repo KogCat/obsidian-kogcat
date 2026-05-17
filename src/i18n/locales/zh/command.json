@@ -1,0 +1,8 @@
+{
+  "openChat": "打开对话",
+  "addSelectionToChat": "将选区添加到对话",
+  "toggleCalibration": "切换 KogCat 校准",
+  "rebuildVaultIndex": "重建 vault 全量索引",
+  "updateVaultIndex": "增量更新已修改文件索引",
+  "openRibbon": "打开 Kog Cat"
+}

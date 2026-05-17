@@ -1,0 +1,11 @@
+{
+  "preparing": "正在准备 KogCat 引擎…",
+  "downloading": "正在下载 KogCat 引擎…",
+  "registeringService": "正在注册 KogCat 引擎后台服务…",
+  "starting": "正在启动 KogCat 引擎…",
+  "ready": "KogCat 引擎已就绪",
+  "installFailed": "KogCat 引擎安装失败：{{message}}",
+  "serviceRegisterFailed": "无法注册后台服务：{{message}}",
+  "platformUnsupported": "当前平台 ({{platform}}) 暂不支持后台服务自动注册",
+  "statusAbnormal": "状态异常：{{kind}}"
+}

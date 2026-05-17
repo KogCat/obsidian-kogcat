@@ -1,0 +1,4 @@
+{
+  "stats": "{{nodes}} nodes · {{edges}} edges · {{vectors}} vectors",
+  "pinnedSuffix": " · pinned"
+}

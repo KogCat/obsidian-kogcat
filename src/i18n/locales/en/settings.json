@@ -1,0 +1,274 @@
+{
+  "language": {
+    "name": "Language",
+    "desc": "Plugin UI language. \"Auto\" follows Obsidian's interface language.",
+    "options": {
+      "auto": "Auto",
+      "en": "English",
+      "zh": "中文"
+    }
+  },
+  "kogcat": {
+    "header": "KogCat",
+    "answerMode": {
+      "name": "Answer mode",
+      "desc": "Choose Quick Answer for speed, or Advisor Answer when you want KogCat to lead the response.",
+      "options": {
+        "quick": "Quick Answer",
+        "advisor": "Advisor Answer",
+        "off": "Off"
+      }
+    },
+    "engine": {
+      "name": "Engine",
+      "desc": "Restart the local engine, check for updates, or open the log file.",
+      "restart": "Restart",
+      "checkUpdate": "Check for updates",
+      "openLog": "Open log"
+    },
+    "advanced": {
+      "name": "Advanced engine settings",
+      "desc": "Managed automatically by default. Open this only if you run om-core yourself or need a custom binary/port.",
+      "show": "Show",
+      "hide": "Hide"
+    },
+    "external": {
+      "name": "External engine",
+      "desc": "Connect to an already-running om-core on port {{port}} instead of launching the managed engine."
+    },
+    "binaryPath": {
+      "name": "Binary path",
+      "desc": "Override the managed binary. Leave empty to use the auto-downloaded engine.",
+      "placeholder": "(managed)"
+    },
+    "port": {
+      "name": "Port",
+      "desc": "HTTP port for the local engine. KogCat falls back to a free port if this one is busy."
+    }
+  },
+  "chat": {
+    "header": "Chat",
+    "chatModel": {
+      "name": "Chat model",
+      "desc": "Choose the model you want to use for chat.",
+      "recommendedSuffix": " (Recommended)"
+    },
+    "applyModel": {
+      "name": "Apply model",
+      "desc": "Choose the model you want to use for apply feature."
+    },
+    "systemPrompt": {
+      "name": "System prompt",
+      "desc": "This prompt will be added to the beginning of every chat."
+    },
+    "includeCurrentFile": {
+      "name": "Include current file",
+      "desc": "Automatically include the content of your current file in chats."
+    },
+    "enableTools": {
+      "name": "Enable tools",
+      "desc": "Allow the AI to use MCP tools."
+    },
+    "maxAutoIterations": {
+      "name": "Max auto tool requests",
+      "desc": "Maximum number of consecutive tool calls that can be made automatically without user confirmation. Higher values can significantly increase costs as each tool call consumes additional tokens."
+    }
+  },
+  "rag": {
+    "header": "RAG",
+    "embeddingModel": {
+      "name": "Embedding model",
+      "desc": "Choose the model you want to use for embeddings"
+    },
+    "includePatterns": {
+      "name": "Include patterns",
+      "desc": "Specify glob patterns to include files in indexing (one per line). Example: use 'notes/**' for all files in the notes folder. Leave empty to include all files. Requires 'Rebuild entire vault index' after changes.",
+      "test": "Test patterns"
+    },
+    "excludePatterns": {
+      "name": "Exclude patterns",
+      "desc": "Specify glob patterns to exclude files from indexing (one per line). Example: use 'notes/**' for all files in the notes folder. Leave empty to exclude nothing. Requires 'Rebuild entire vault index' after changes.",
+      "test": "Test patterns"
+    },
+    "chunkSize": {
+      "name": "Chunk size",
+      "desc": "Set the chunk size for text splitting. After changing this, please re-index the vault using the 'Rebuild entire vault index' command."
+    },
+    "thresholdTokens": {
+      "name": "Threshold tokens",
+      "desc": "Maximum number of tokens before switching to RAG. If the total tokens from mentioned files exceed this, RAG will be used instead of including all file contents."
+    },
+    "minSimilarity": {
+      "name": "Minimum similarity",
+      "desc": "Minimum similarity score for RAG results. Higher values return more relevant but potentially fewer results."
+    },
+    "limit": {
+      "name": "Limit",
+      "desc": "Maximum number of RAG results to include in the prompt. Higher values provide more context but increase token usage."
+    },
+    "manageDb": {
+      "name": "Manage Embedding Database",
+      "action": "Manage"
+    }
+  },
+  "providers": {
+    "header": "Providers",
+    "desc": "Configure API providers (usage-based billing).",
+    "addCustom": "Add custom provider",
+    "apiKeySet": "Set API key",
+    "apiKeyMasked": "••••••••"
+  },
+  "models": {
+    "header": "Models",
+    "desc": "Built-in models are shortcuts. Use Add custom model to enter manual model IDs from any configured provider.",
+    "chatModels": {
+      "header": "Chat Models",
+      "desc": "Models available for chat and apply",
+      "addCustom": "Add custom model"
+    },
+    "embeddingModels": {
+      "header": "Embedding Models",
+      "desc": "Models used for generating embeddings for RAG",
+      "addCustom": "Add custom model",
+      "providerId": "Provider ID",
+      "dimension": "Dimension"
+    },
+    "noSettings": "No settings available for this model"
+  },
+  "modelOptions": {
+    "openai": {
+      "reasoning": {
+        "name": "Reasoning",
+        "desc": "Enable reasoning for the model. Available for o-series models (e.g., o3, o4-mini) and GPT-5 models."
+      },
+      "reasoningEffort": {
+        "name": "Reasoning Effort",
+        "desc": "Controls how much thinking the model does before responding. Default is \"medium\"."
+      }
+    },
+    "openaiPlan": {
+      "reasoningEffort": {
+        "name": "Reasoning Effort",
+        "desc": "Controls how much thinking the model does before responding.",
+        "notSet": "Not set (OpenAI default)"
+      },
+      "reasoningSummary": {
+        "name": "Reasoning Summary",
+        "desc": "Optional summary of reasoning.",
+        "notSet": "Not set (OpenAI default)"
+      }
+    },
+    "anthropic": {
+      "extendedThinking": {
+        "name": "Extended Thinking",
+        "desc": "Enable extended thinking for Claude. Available for Claude Sonnet 3.7+ and Claude Opus 4.0+."
+      },
+      "budgetTokens": {
+        "name": "Budget Tokens",
+        "desc": "The maximum number of tokens that Claude can use for thinking. Must be at least 1024.",
+        "placeholder": "Number of tokens"
+      }
+    },
+    "gemini": {
+      "thinkingSettings": {
+        "name": "Thinking Settings",
+        "desc": "Customize thinking level or budget. When disabled, the model follows its default behavior (dynamic thinking for most Gemini 2.5 and 3 models)."
+      },
+      "controlMode": {
+        "name": "Control Mode",
+        "desc": "Use 'Level' for Gemini 3 models, 'Budget' for Gemini 2.5 models.",
+        "level": "Level (Gemini 3)",
+        "budget": "Budget (Gemini 2.5)"
+      },
+      "thinkingLevel": {
+        "name": "Thinking Level",
+        "desc": "Controls reasoning depth. 'high' is default for Gemini 3."
+      },
+      "thinkingBudget": {
+        "name": "Thinking Budget",
+        "desc": "Token budget for thinking. Use -1 for dynamic, 0 to disable.",
+        "placeholder": "-1 for dynamic"
+      },
+      "includeThoughts": {
+        "name": "Include Thought Summaries",
+        "desc": "Shows a summary of the model's reasoning process. Enabling this can increase token usage."
+      }
+    },
+    "perplexity": {
+      "searchContextSize": {
+        "name": "Search Context Size",
+        "desc": "Determines how much search context is retrieved for the model. Choose \"low\" for minimal context and lower costs, \"medium\" for a balanced approach, or \"high\" for maximum context at higher cost. Default is \"low\"."
+      }
+    }
+  },
+  "mcp": {
+    "header": "MCP (Model Context Pool)",
+    "warningLabel": "Warning:",
+    "warning": "When using tools, the tool response is passed to the language model (LLM). If the tool result contains a large amount of content, this can significantly increase LLM usage and associated costs. Please be mindful when enabling or using tools that may return long outputs.",
+    "notSupported": "MCP is not supported on mobile devices",
+    "subHeader": "MCP Servers",
+    "addServer": "Add MCP Server",
+    "noServers": "No MCP servers found",
+    "table": {
+      "server": "Server",
+      "status": "Status",
+      "enabled": "Enabled",
+      "actions": "Actions"
+    },
+    "tool": {
+      "enabled": "Enabled",
+      "autoExecute": "Auto-execute",
+      "toolsHeader": "Tools",
+      "errorHeader": "Error"
+    },
+    "status": {
+      "connected": "Connected",
+      "connecting": "Connecting...",
+      "error": "Error",
+      "disconnected": "Disconnected"
+    }
+  },
+  "packs": {
+    "header": "Knowledge Packs",
+    "engineUnavailable": "KogCat engine unavailable — start the engine to manage packs.",
+    "loading": "Loading…",
+    "error": "Error: {{message}}",
+    "noPacks": "No packs installed",
+    "installing": "Installing…",
+    "installOrUpgrade": "Install / Upgrade",
+    "noFiles": "Place <code>.ompack</code> files in your vault to install them.",
+    "noManifest": "No manifest on disk"
+  },
+  "templates": {
+    "header": "Prompt Templates",
+    "howTo": "<strong>How to use:</strong> Create templates with reusable content that you can quickly insert into your chat. Type <code>/template-name</code> in the chat input to trigger template insertion. You can also drag and select text in the chat input to reveal a \"Create template\" button for quick template creation.",
+    "saved": "Saved Templates",
+    "addTemplate": "Add Prompt Template",
+    "loading": "Loading templates...",
+    "empty": "No templates found"
+  },
+  "planConnections": {
+    "header": "Connect your subscription",
+    "desc": "Use a subscription instead of API-key billing. Connected subscriptions consume your plan's included usage (Codex for OpenAI, Gemini Code Assist for Gemini). Subscriptions aren't supported on mobile environments.",
+    "openai": {
+      "title": "OpenAI",
+      "desc": "Uses your Codex usage from your ChatGPT plan.",
+      "usageLink": "Check Codex usage and limits"
+    },
+    "gemini": {
+      "title": "Gemini",
+      "descPrefix": "Uses your Gemini Code Assist usage from your Google AI Plan.",
+      "descSuffix": "Check your limit in Gemini CLI with"
+    },
+    "connect": "Connect",
+    "disconnect": "Disconnect"
+  },
+  "etc": {
+    "header": "Etc",
+    "reset": {
+      "name": "Reset settings",
+      "desc": "Reset all settings to default values",
+      "action": "Reset"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "calibration": {
+    "enabled": "KogCat calibration enabled",
+    "disabled": "KogCat calibration disabled"
+  },
+  "vaultIndex": {
+    "rebuilding": "Rebuilding vault index…",
+    "indexingProgress": "Indexing chunks: {{completed}} / {{total}}",
+    "indexingProgressRateLimited": "Indexing chunks: {{completed}} / {{total}}\n(waiting for rate limit to reset)",
+    "rebuildComplete": "Rebuilding vault index complete",
+    "rebuildFailed": "Rebuilding vault index failed",
+    "updating": "Updating vault index…",
+    "updateComplete": "Vault index updated",
+    "updateFailed": "Vault index update failed"
+  },
+  "engine": {
+    "downloading": "Downloading KogCat engine (om-core {{version}})…",
+    "unreachable": "KogCat engine unreachable: {{message}}",
+    "unavailable": "KogCat engine unavailable: {{message}}",
+    "restarting": "KogCat engine restarting…",
+    "restartFailed": "Restart failed: {{message}}",
+    "updateSkipped": "Update check skipped (already checked recently)",
+    "updateAvailable": "Newer om-core released ({{version}}). Update the KogCat plugin to pick it up.",
+    "updateUpToDate": "om-core is up to date ({{version}})",
+    "openingLog": "Opening KogCat engine log…",
+    "openLogFailed": "Open log failed: {{message}}",
+    "logPathUnavailable": "Log path unavailable",
+    "logLocation": "Log: {{path}}"
+  },
+  "settings": {
+    "invalid": "Invalid settings:\n{{issues}}",
+    "resetDone": "Settings have been reset to defaults"
+  },
+  "migration": {
+    "failed": "Failed to migrate to JSON storage. Please check the console for details.",
+    "reloading": "Reloading \"kog-cat\" due to migration"
+  },
+  "pack": {
+    "vaultPathUnresolved": "Cannot resolve vault path on this platform",
+    "alreadyInstalled": "Pack {{name}} {{version}} already installed (no change)",
+    "installed": "Installed {{name}} {{version}} — {{nodes}} nodes, {{edges}} edges",
+    "warnings": "Warnings: {{warnings}}",
+    "installFailed": "Install failed: {{message}}",
+    "upgraded": "Upgraded {{name}} to {{version}}",
+    "upgradeFailed": "Upgrade failed: {{message}}",
+    "uninstalled": "Uninstalled {{name}}",
+    "uninstallFailed": "Uninstall failed: {{message}}"
+  },
+  "template": {
+    "deleteFailed": "Failed to delete template. Please try again.",
+    "loadFailed": "Failed to load template. Please try again.",
+    "createFailed": "Failed to create template",
+    "nameExists": "A template with this name already exists",
+    "nameRequired": "Please enter a name for your template",
+    "contentRequired": "Please enter a content for your template",
+    "createSuccess": "Template created"
+  },
+  "chat": {
+    "loadFailed": "Failed to load conversation",
+    "saveFailed": "Failed to save chat history"
+  },
+  "provider": {
+    "notFound": "No provider found with this ID",
+    "idExists": "Provider with this ID already exists. Try a different ID.",
+    "idMissing": "Provider with ID {{id}} not found",
+    "doesNotExist": "Provider with this ID does not exist"
+  },
+  "model": {
+    "idAndNameRequired": "Model ID and Model Name are both required.",
+    "idExists": "Model with this ID already exists. Try a different ID.",
+    "invalidNumber": "Please enter a valid number",
+    "invalidBudgetNumber": "Please enter a valid number for thinking budget",
+    "budgetTooLow": "Budget tokens must be at least 1024",
+    "reasoningEffortInvalid": "Reasoning effort must be one of \"low\", \"medium\", \"high\""
+  },
+  "oauth": {
+    "initFailed": "Failed to initialize OAuth flow",
+    "linkNotReady": "OAuth link is not ready. Try again.",
+    "pasteCode": "Paste the authorization code",
+    "claudeConnected": "Claude Plan connected",
+    "geminiConnected": "Gemini Plan connected",
+    "openaiConnected": "OpenAI Plan connected",
+    "failed": "OAuth failed. Double-check the code and try again."
+  },
+  "mcp": {
+    "addFailed": "Failed to add MCP server."
+  },
+  "embedding": {
+    "rebuildFailed": "Failed to rebuild index",
+    "removeFailed": "Failed to remove index"
+  }
+}

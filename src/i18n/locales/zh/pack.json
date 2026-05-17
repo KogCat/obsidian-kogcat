@@ -1,0 +1,4 @@
+{
+  "stats": "节点 {{nodes}} · 边 {{edges}} · 向量 {{vectors}}",
+  "pinnedSuffix": " · 已锁定"
+}
