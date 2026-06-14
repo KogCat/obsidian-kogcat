@@ -1,0 +1,82 @@
+{
+  "calibration": {
+    "enabled": "KogCat 校准已启用",
+    "disabled": "KogCat 校准已停用"
+  },
+  "vaultIndex": {
+    "rebuilding": "正在重建 vault 索引…",
+    "indexingProgress": "索引片段：{{completed}} / {{total}}",
+    "indexingProgressRateLimited": "索引片段：{{completed}} / {{total}}\n（等待速率限制重置）",
+    "rebuildComplete": "vault 索引重建完成",
+    "rebuildFailed": "vault 索引重建失败",
+    "updating": "正在更新 vault 索引…",
+    "updateComplete": "vault 索引已更新",
+    "updateFailed": "vault 索引更新失败"
+  },
+  "engine": {
+    "downloading": "正在下载 KogCat 引擎（om-core {{version}}）…",
+    "unreachable": "KogCat 引擎无法连接：{{message}}",
+    "unavailable": "KogCat 引擎不可用：{{message}}",
+    "restarting": "KogCat 引擎重启中…",
+    "restartReady": "KogCat 引擎已重新连接",
+    "restartFailed": "重启失败：{{message}}",
+    "updateSkipped": "已跳过更新检查（不久前刚检查过）",
+    "updateAvailable": "om-core 有新版本（{{version}}）。请更新 KogCat 插件以拉取。",
+    "updateUpToDate": "om-core 已是最新版本（{{version}}）",
+    "logNotReady": "日志尚未生成（引擎还未运行或刚启动）",
+    "openLogFailed": "打开日志失败：{{message}}",
+    "logPathUnavailable": "日志路径不可用",
+    "logLocation": "日志：{{path}}"
+  },
+  "settings": {
+    "invalid": "设置无效：\n{{issues}}",
+    "resetDone": "设置已恢复默认值"
+  },
+  "migration": {
+    "failed": "迁移到 JSON 存储失败，请查看控制台获取详情。",
+    "reloading": "因为迁移正在重新加载 \"kogcat\""
+  },
+  "template": {
+    "deleteFailed": "删除模板失败，请重试。",
+    "loadFailed": "加载模板失败，请重试。",
+    "createFailed": "创建模板失败",
+    "nameExists": "已存在同名模板",
+    "nameRequired": "请填写模板名称",
+    "contentRequired": "请填写模板内容",
+    "createSuccess": "模板已创建"
+  },
+  "chat": {
+    "loadFailed": "加载对话失败",
+    "saveFailed": "保存对话历史失败"
+  },
+  "provider": {
+    "notFound": "找不到该 ID 对应的 provider",
+    "idExists": "已存在相同 ID 的 provider，请换一个 ID。",
+    "idMissing": "找不到 ID 为 {{id}} 的 provider",
+    "doesNotExist": "该 ID 对应的 provider 不存在"
+  },
+  "model": {
+    "idAndNameRequired": "Model ID 和 Model Name 都必填。",
+    "idExists": "已存在相同 ID 的模型，请换一个 ID。",
+    "invalidNumber": "请输入有效数字",
+    "invalidBudgetNumber": "请为 thinking budget 输入有效数字",
+    "budgetTooLow": "Budget tokens 至少需要 1024",
+    "reasoningEffortInvalid": "Reasoning effort 必须是 \"low\"、\"medium\" 或 \"high\""
+  },
+  "oauth": {
+    "initFailed": "OAuth 流程初始化失败",
+    "linkNotReady": "OAuth 链接尚未就绪，请重试。",
+    "pasteCode": "粘贴授权码",
+    "claudeConnected": "已连接 Claude Plan",
+    "geminiConnected": "已连接 Gemini Plan",
+    "openaiConnected": "已连接 OpenAI Plan",
+    "failed": "OAuth 失败，请核对授权码后重试。"
+  },
+  "mcp": {
+    "addFailed": "添加 MCP 服务器失败。"
+  },
+  "embedding": {
+    "rebuildFailed": "重建索引失败",
+    "removeFailed": "移除索引失败"
+  }
+}

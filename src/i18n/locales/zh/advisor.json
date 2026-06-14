@@ -1,0 +1,14 @@
+{
+  "card": {
+    "supplement": {
+      "title": "KogCat 有一个补充视角",
+      "summary": "这个回答可以参考，但可能遗漏了一个重要边界或原则。"
+    },
+    "caution": {
+      "title": "KogCat 建议先看这个判断",
+      "summary": "这个回答可能偏离了某个长期原则、边界条件或反模式。"
+    },
+    "view": "查看 KogCat 回复",
+    "hide": "收起 KogCat 回复"
+  }
+}

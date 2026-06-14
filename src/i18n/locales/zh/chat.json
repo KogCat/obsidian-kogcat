@@ -1,0 +1,39 @@
+{
+  "history": {
+    "trigger": "对话历史",
+    "empty": "没有对话"
+  },
+  "header": {
+    "newChat": "新对话",
+    "calibrationOn": "KogCat 校准：开",
+    "calibrationOff": "KogCat 校准：关",
+    "addImage": "添加图片",
+    "chatWithVault": "与 vault 对话",
+    "chatWithVaultTooltip": "与整个 vault 对话"
+  },
+  "input": {
+    "send": "发送消息",
+    "stop": "停止生成",
+    "placeholder": "问点什么…"
+  },
+  "tool": {
+    "abort": "中止",
+    "reject": "拒绝",
+    "calling": "调用工具中…",
+    "result": "结果",
+    "status": {
+      "pendingApproval": "调用",
+      "rejected": "已拒绝",
+      "running": "运行中",
+      "success": "已调用",
+      "error": "失败",
+      "aborted": "已中止"
+    }
+  },
+  "ribbon": {
+    "open": "打开 Kog Cat"
+  },
+  "view": {
+    "title": "Kog Cat"
+  }
+}

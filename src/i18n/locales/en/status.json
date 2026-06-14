@@ -1,0 +1,9 @@
+{
+  "calibrating": "Calibrating…",
+  "composingAdvisor": "Preparing KogCat answer…",
+  "checked": "KogCat checked",
+  "kbConfirmed": "KB confirmed",
+  "kbUncovered": "KB uncovered",
+  "unavailableNoLlm": "Calibration unavailable — configure LLM",
+  "failed": "Calibration failed"
+}

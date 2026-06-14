@@ -1,0 +1,5 @@
+{
+  "generic": "Error: {{message}}",
+  "searchContextSizeInvalid": "Search context size must be one of \"low\", \"medium\", \"high\"",
+  "templateLoadList": "Failed to load templates. Please try refreshing the settings."
+}

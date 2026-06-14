@@ -1,0 +1,8 @@
+{
+  "indexStatus": {
+    "idle": "Vault index ready",
+    "indexing": "Indexing vault…",
+    "rebuilding": "Rebuilding vault index…",
+    "failed": "Vault index failed"
+  }
+}

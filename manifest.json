@@ -1,0 +1,10 @@
+{
+  "id": "kogcat",
+  "name": "KogCat",
+  "version": "0.13.6",
+  "minAppVersion": "1.7.2",
+  "description": "Calibrate your thinking against a knowledge base of cognitive biases, anti-patterns, and contradictions with your past notes.",
+  "author": "KogCat",
+  "authorUrl": "https://github.com/KogCat",
+  "isDesktopOnly": true
+}

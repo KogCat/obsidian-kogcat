@@ -1,0 +1,287 @@
+{
+  "confirm": {
+    "defaultCta": "Confirm",
+    "cancel": "Cancel"
+  },
+  "error": {
+    "reportBug": "Report Bug",
+    "openSettings": "Open Settings",
+    "cancel": "Cancel"
+  },
+  "resetSettings": {
+    "title": "Reset settings",
+    "message": "Are you sure you want to reset all settings to default values? This cannot be undone.",
+    "cta": "Reset"
+  },
+  "deleteProvider": {
+    "title": "Delete Provider",
+    "message": "Are you sure you want to delete provider \"{{id}}\"?\n\nThis will also delete:\n- {{chatModels}} chat model(s)\n- {{embeddingModels}} embedding model(s)\n\nAll embeddings generated using the associated embedding models will also be deleted.",
+    "cta": "Delete"
+  },
+  "deleteChatModel": {
+    "title": "Delete Chat Model",
+    "message": "Are you sure you want to delete model \"{{id}}\"?",
+    "cta": "Delete",
+    "cannotRemoveSelected": "Cannot remove model that is currently selected as Chat Model or Apply Model",
+    "cannotDisableSelected": "Cannot disable model that is currently selected as Chat Model or Apply Model"
+  },
+  "deleteEmbeddingModel": {
+    "title": "Delete Embedding Model",
+    "message": "Are you sure you want to delete embedding model \"{{id}}\"?\n\nThis will also delete all embeddings generated using this model from the database.",
+    "cta": "Delete",
+    "cannotRemoveSelected": "Cannot remove model that is currently selected as Embedding Model"
+  },
+  "deleteMcpServer": {
+    "title": "Delete MCP Server",
+    "message": "Are you sure you want to delete MCP server \"{{name}}\"?",
+    "cta": "Delete"
+  },
+  "deleteTemplate": {
+    "title": "Delete Template",
+    "message": "Are you sure you want to delete template \"{{name}}\"?",
+    "cta": "Delete"
+  },
+  "kogcatIntro": {
+    "title": "KogCat",
+    "lead": "KogCat reviews your thinking — it is not chat, and it is not a writing tool.",
+    "body": "When you write a claim, KogCat checks it against your knowledge base and keeps only a few relevant calibration points that can improve the judgment.",
+    "points": {
+      "local": "Local first — reviewed text stays on this machine and is not uploaded to KogCat servers.",
+      "byoKey": "BYO-key — use your own LLM key, a local model, or an offline preview.",
+      "clean": "Clean uninstall — KogCat does not write proprietary syntax into your vault."
+    },
+    "usagePrefix": "How to use: ",
+    "usageMain": "select anything you wrote → press Cmd/Ctrl+Shift+C or right-click to review",
+    "usageSuffix": " (command palette and the KogCat ribbon icon work too).",
+    "chatHistoryNote": "Note: KogCat has moved from chat to a review pass. The old chat entry is no longer shown as the product surface.",
+    "providerNote": "To refine reviews you need one model provider. Set one up to get started.",
+    "setupProvider": "Set up provider",
+    "tryDemo": "Try sample"
+  },
+  "disconnectPlan": {
+    "title": "Disconnect subscription",
+    "openai": "Disconnect OpenAI from Kog Cat?",
+    "gemini": "Disconnect Gemini from Kog Cat?",
+    "cta": "Disconnect"
+  },
+  "chatModelEdit": {
+    "title": "Edit Chat Model: {{id}}"
+  },
+  "addProvider": {
+    "title": "Add Custom Provider",
+    "edit": "Edit Provider: {{id}}",
+    "id": "ID",
+    "idDesc": "Choose an ID to identify this provider in your settings. This is just for your reference.",
+    "idPlaceholder": "my-custom-provider",
+    "type": "Provider Type",
+    "apiKey": "API Key",
+    "apiKeyDesc": "(leave blank if not required)",
+    "apiKeyPlaceholder": "Enter your API Key",
+    "baseUrl": "Base URL",
+    "baseUrlDesc": "(leave blank if using default; OpenAI-compatible relay URLs usually end in /v1)",
+    "baseUrlPlaceholder": "e.g., https://relay.example.com/v1",
+    "modelsHeader": "Models",
+    "modelsDesc": "Enter the key / base URL above, then fetch the models this provider offers and pick the ones to use.",
+    "modelsManualOnly": "Enter the model name manually below.",
+    "fetchModels": "Fetch models",
+    "fetching": "Fetching…",
+    "fetchFailed": "Could not fetch models: {{message}}",
+    "fetchEmpty": "No models returned.",
+    "testConnection": "Test",
+    "testing": "Testing…",
+    "testSucceeded": "Connected with {{model}}.",
+    "testFailed": "Connection test failed: {{message}}",
+    "testNeedsModel": "Choose or enter a model before testing.",
+    "filterPlaceholder": "Filter models…",
+    "selectedCount": "{{count}} selected",
+    "manualModel": "Add model manually",
+    "manualModelDesc": "Use only when this provider cannot list models. This must be the exact model id sent to the provider API.",
+    "manualModelPlaceholder": "e.g., gpt-5.2 or provider/model-name",
+    "manualModelFallback": "Model not listed?",
+    "manualModelFallbackDesc": "Most providers should use Fetch models. Manual entry is only a fallback for Azure, local servers, or relays without a models endpoint.",
+    "manualModelFallbackAction": "Enter manually",
+    "advancedSettings": "Advanced",
+    "advancedSettingsDesc": "Compatibility options for uncommon provider gateways.",
+    "showAdvancedSettings": "Show advanced",
+    "hideAdvancedSettings": "Hide advanced",
+    "save": "Save",
+    "add": "Add",
+    "cancel": "Cancel"
+  },
+  "addChatModel": {
+    "title": "Add Custom Chat Model",
+    "id": "ID",
+    "idDesc": "Choose an ID to identify this model in your settings. This is just for your reference.",
+    "idPlaceholder": "my-custom-model",
+    "providerId": "Provider ID",
+    "modelName": "Model Name",
+    "modelNamePlaceholder": "Enter the model name",
+    "promptLevel": "Prompt Level",
+    "promptLevelDesc": "Choose how complex the system prompt should be. Select \"simple\" for small models that ignore user questions and just repeat back instructions.",
+    "add": "Add",
+    "cancel": "Cancel"
+  },
+  "addEmbeddingModel": {
+    "title": "Add Custom Embedding Model",
+    "id": "ID",
+    "idDesc": "Choose an ID to identify this model in your settings. This is just for your reference.",
+    "idPlaceholder": "my-custom-embedding-model",
+    "providerId": "Provider ID",
+    "modelName": "Model Name",
+    "modelNamePlaceholder": "Enter the model name",
+    "outputDimensions": "Output Dimensions",
+    "outputDimensionsDesc": "Optional. Request a specific output dimension from models that support Matryoshka Representation Learning (MRL), such as OpenAI's text-embedding-3-* or Google's gemini-embedding-001. Leave empty to use the model's default dimension.",
+    "outputDimensionsPlaceholder": "e.g., 768",
+    "performanceWarning": {
+      "title": "Performance Warning",
+      "message": "This model outputs {{dimension}} dimensions, but the optimized dimensions for database indexing are: {{supported}}.\n\nThis may result in slower search performance.\n\nDo you want to continue anyway?"
+    },
+    "errors": {
+      "invalidResult": "Embedding model returned an invalid result",
+      "dimensionMismatch": "Requested output dimension {{requested}}, but the model returned {{actual}} dimensions. This model may not support custom output dimensions (Matryoshka Representation Learning). Leave the \"Output Dimensions\" field empty to use the model's default dimension.",
+      "unknown": "An unknown error occurred"
+    },
+    "add": "Add",
+    "cancel": "Cancel"
+  },
+  "addMcpServer": {
+    "addTitle": "Add MCP Server",
+    "editTitle": "Edit MCP Server",
+    "name": "Name",
+    "nameDesc": "The name of the MCP server",
+    "namePlaceholder": "e.g. 'github'",
+    "parameters": "Parameters",
+    "parametersDesc": "JSON configuration that defines how to run the MCP server. Format must include:\n- \"command\": The executable name (e.g., \"npx\", \"node\")\n- \"args\": (Optional) Array of command-line arguments\n- \"env\": (Optional) Key-value pairs of environment variables",
+    "valid": "Valid parameters",
+    "errors": {
+      "nameRequired": "Name is required",
+      "nameExists": "Server with same name already exists",
+      "parametersRequired": "Parameters are required",
+      "invalidJson": "Parameters must be valid JSON",
+      "invalidJsonFormat": "Invalid JSON format",
+      "invalidParameters": "Invalid parameters"
+    },
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "template": {
+    "createTitle": "Add Template",
+    "editTitle": "Edit Template",
+    "nameLabel": "Name",
+    "nameDesc": "The name of the template",
+    "contentLabel": "Template Content",
+    "contentDesc": "Content of the template",
+    "namePlaceholder": "Template name",
+    "contentPlaceholder": "Template content",
+    "save": "Save",
+    "cancel": "Cancel",
+    "createCta": "Create",
+    "created": "Template created: {{name}}",
+    "updated": "Template updated: {{name}}"
+  },
+  "installerUpdateRequired": {
+    "title": "Kog Cat Requires Obsidian Update",
+    "message": "Kog Cat requires a newer version of the Obsidian installer. Please note that this is different from Obsidian's in-app updates. You must manually download the latest version of Obsidian to continue using Kog Cat.",
+    "cta": "Open Download Page"
+  },
+  "embeddingDbManage": {
+    "title": "Manage Embedding Database",
+    "loading": "Loading...",
+    "refresh": "Refresh",
+    "lastUpdated": "Last updated: {{time}}",
+    "columns": {
+      "model": "Model",
+      "totalEmbeddings": "Total Embeddings",
+      "sizeMb": "Size (MB)",
+      "actions": "Actions"
+    },
+    "actions": {
+      "rebuild": "Rebuild index",
+      "remove": "Remove index"
+    }
+  },
+  "includedFiles": {
+    "title": "{{count}} Files Included",
+    "noPatterns": "No inclusion patterns specified - all files will be included (except those matching exclusion patterns)",
+    "empty": "No files match the inclusion patterns"
+  },
+  "excludedFiles": {
+    "title": "{{count}} Files Excluded",
+    "empty": "No files match the exclusion patterns"
+  },
+  "connectPlan": {
+    "howItWorks": "How it works",
+    "step1": "Login in your browser",
+    "step2": "Copy the code from the redirected URL",
+    "step3": "Paste it here and click \"Connect\"",
+    "loginField": {
+      "name": "{{provider}} login",
+      "desc": "Login to {{provider}} in your browser."
+    },
+    "loginButton": "Login to {{provider}}",
+    "codeField": {
+      "name": "Authorization code",
+      "desc": "Paste the code from the redirected URL.",
+      "placeholder": "Paste authorization code"
+    },
+    "submit": "Connect",
+    "cancel": "Cancel"
+  },
+  "connectOpenAIPlan": {
+    "title": "Connect OpenAI subscription",
+    "providerNotFound": "OpenAI Plan provider not found.",
+    "loginName": "OpenAI login",
+    "loginDesc": "Login to OpenAI in your browser. Kog Cat connects automatically when you return.",
+    "loginButton": "Login to OpenAI",
+    "waitingTitle": "Waiting for authorization",
+    "waitingBody": "Complete the login in your browser, then return here",
+    "fallbackName": "Redirect URL (fallback)",
+    "fallbackDesc": "Use this only if automatic connect fails. Paste the full redirect URL from your browser address bar.",
+    "fallbackPlaceholder": "http://localhost:1455/auth/...",
+    "fallbackButton": "Connect with URL",
+    "steps": {
+      "step1": "Login to OpenAI in your browser",
+      "step2": "Kog Cat connects automatically when you return",
+      "step3": "If automatic connect fails, paste the full redirect URL below and click \"Connect with URL\""
+    },
+    "errors": {
+      "autoFailed": "Automatic connect failed. Paste the full redirect URL below and click \"Connect with URL\".",
+      "redirectMissing": "Paste the full redirect URL from your browser address bar.",
+      "codeMissing": "No authorization code found. Paste the full redirect URL from your browser address bar.",
+      "stateMissing": "No OAuth state found. Paste the full redirect URL from your browser address bar.",
+      "stateMismatch": "OAuth state mismatch. Start login again and paste the newest redirect URL.",
+      "manualFailed": "Manual connect failed. Start login again and paste the newest redirect URL."
+    }
+  },
+  "connectGeminiPlan": {
+    "title": "Connect Google AI subscription",
+    "providerNotFound": "Gemini Plan provider not found.",
+    "loginName": "Gemini login",
+    "loginDesc": "Login to Google in your browser. Kog Cat connects automatically when you return.",
+    "loginButton": "Login to Google",
+    "waitingTitle": "Waiting for authorization",
+    "waitingBody": "Complete the login in your browser, then return here",
+    "fallbackName": "Redirect URL (fallback)",
+    "fallbackDesc": "Use this only if automatic connect fails. Paste the full redirect URL from your browser address bar.",
+    "fallbackPlaceholder": "http://localhost:8085/oauth2callback?code=...",
+    "fallbackButton": "Connect with URL",
+    "steps": {
+      "step1": "Login to Google in your browser",
+      "step2": "Kog Cat connects automatically when you return",
+      "step3": "If automatic connect fails, paste the full redirect URL below and click \"Connect with URL\""
+    },
+    "errors": {
+      "autoFailed": "Automatic connect failed. Paste the full redirect URL below and click \"Connect with URL\".",
+      "redirectMissing": "Paste the full redirect URL from your browser address bar.",
+      "codeMissing": "No authorization code found. Paste the full redirect URL from your browser address bar.",
+      "stateMissing": "No OAuth state found. Paste the full redirect URL from your browser address bar.",
+      "loginFirst": "Click \"Login to Google\" first, then paste the redirect URL.",
+      "stateMismatch": "OAuth state mismatch. Start login again and paste the newest redirect URL.",
+      "manualFailed": "Manual connect failed. Start login again and paste the newest redirect URL."
+    }
+  },
+  "connectClaudePlan": {
+    "title": "Connect Claude subscription",
+    "providerNotFound": "Claude Plan provider not found."
+  }
+}

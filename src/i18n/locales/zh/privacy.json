@@ -1,0 +1,8 @@
+{
+  "title": "Kog Cat 将使用你的 LLM",
+  "body": "当引擎标记 LLM 回答时，KogCat 会向你在设置中配置的 chat model 发送原始文本 + 知识库信号，生成参谋回复。\n\n除去你配置的 LLM 提供方，没有数据离开本机。本地引擎（om-core）自身不调用任何 LLM。",
+  "cta": {
+    "agree": "理解并继续",
+    "cancel": "取消"
+  }
+}

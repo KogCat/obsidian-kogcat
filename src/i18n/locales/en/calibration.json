@@ -1,0 +1,54 @@
+{
+  "labels": {
+    "selection": "Selection",
+    "paragraph": "Current paragraph",
+    "note": "Whole note",
+    "demo": "Sample"
+  },
+  "empty": {
+    "hint": "Select text, then press Cmd/Ctrl+Shift+C or right-click to review it. KogCat keeps only a few points worth handling."
+  },
+  "setup": {
+    "banner": "Set up a model provider to refine reviews — add your API key and base URL, then pick a model.",
+    "action": "Set up provider"
+  },
+  "loading": {
+    "title": "Reviewing “{{label}}”…",
+    "recall": "Checking local evidence",
+    "refine": "Turning it into a few suggestions",
+    "shape": "Preparing a clear way to handle it"
+  },
+  "errors": {
+    "empty": "No selected or reviewable text.",
+    "engineNotReady": "KogCat engine is not ready yet. Try again in a moment.",
+    "noResponse": "Review failed: engine did not respond.",
+    "reconnect": "Reconnect engine"
+  },
+  "mode": {
+    "capture": { "label": "Capture" },
+    "summary": { "label": "Summary" },
+    "claim": { "label": "Claim" },
+    "action": { "label": "Action" }
+  },
+  "result": {
+    "nextStep": "Try this: {{step}}",
+    "nextStepLabel": "Try this: ",
+    "noStrongPoints": "No sufficiently relevant calibration points this time. KogCat will not pad the panel with weak matches."
+  },
+  "source": {
+    "llm": "Refined with {{model}}",
+    "local": "Local basic result, not LLM-refined"
+  },
+  "actions": {
+    "copyAll": "Copy"
+  },
+  "notice": {
+    "copiedAll": "Review copied",
+    "copyFailed": "Copy failed",
+    "reconnected": "Engine connected — try the review again."
+  },
+  "preview": {
+    "refineFailed": "Only strong local signals are shown this time; weak matches are hidden.",
+    "noModel": "Connect a model and KogCat will organize local evidence into fewer, clearer suggestions."
+  }
+}

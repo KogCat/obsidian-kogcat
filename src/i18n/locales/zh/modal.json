@@ -1,0 +1,287 @@
+{
+  "confirm": {
+    "defaultCta": "确认",
+    "cancel": "取消"
+  },
+  "error": {
+    "reportBug": "上报 Bug",
+    "openSettings": "打开设置",
+    "cancel": "取消"
+  },
+  "resetSettings": {
+    "title": "重置设置",
+    "message": "确定要把所有设置恢复为默认值？此操作无法撤销。",
+    "cta": "重置"
+  },
+  "deleteProvider": {
+    "title": "删除 Provider",
+    "message": "确定要删除 provider \"{{id}}\"？\n\n这同时会删除：\n- {{chatModels}} 个 chat model\n- {{embeddingModels}} 个 embedding model\n\n由相关 embedding 模型生成的所有 embedding 也会被删除。",
+    "cta": "删除"
+  },
+  "deleteChatModel": {
+    "title": "删除 Chat Model",
+    "message": "确定要删除模型 \"{{id}}\"？",
+    "cta": "删除",
+    "cannotRemoveSelected": "无法删除当前选中的 Chat Model 或 Apply Model",
+    "cannotDisableSelected": "无法停用当前选中的 Chat Model 或 Apply Model"
+  },
+  "deleteEmbeddingModel": {
+    "title": "删除 Embedding Model",
+    "message": "确定要删除 embedding 模型 \"{{id}}\"？\n\n由该模型生成的所有 embedding 也会从数据库中删除。",
+    "cta": "删除",
+    "cannotRemoveSelected": "无法删除当前选中的 Embedding Model"
+  },
+  "deleteMcpServer": {
+    "title": "删除 MCP 服务器",
+    "message": "确定要删除 MCP 服务器 \"{{name}}\"？",
+    "cta": "删除"
+  },
+  "deleteTemplate": {
+    "title": "删除模板",
+    "message": "确定要删除模板 \"{{name}}\"？",
+    "cta": "删除"
+  },
+  "kogcatIntro": {
+    "title": "KogCat",
+    "lead": "KogCat 是校准你「思考」的参谋 —— 不是 chat，也不是写作工具。",
+    "body": "你写下一段有观点的文字时，KogCat 把它与知识库交叉，只保留少数足够相关、可以直接帮你改写判断的校准点。",
+    "points": {
+      "local": "本地运行 —— 校准内容不出本机，不上传任何服务器。",
+      "byoKey": "BYO-key —— LLM 用你自己的 key，可用本地模型、可完全离线。",
+      "clean": "卸载即干净 —— 不往笔记里写任何专有语法，删插件后 vault 无残留。"
+    },
+    "usagePrefix": "用法：",
+    "usageMain": "选中你写的任何一段文字 → Cmd/Ctrl+Shift+C 或右键校准",
+    "usageSuffix": "（也可用命令面板或左侧 KogCat 图标）。",
+    "chatHistoryNote": "注意：KogCat 已从 chat 重定位为「校准 review pass」。旧对话入口不再作为产品功能展示。",
+    "providerNote": "精修校准需要配置一个模型 provider，先设置一个即可开始使用。",
+    "setupProvider": "配置 Provider",
+    "tryDemo": "试一段示例"
+  },
+  "disconnectPlan": {
+    "title": "断开订阅",
+    "openai": "确定断开 Kog Cat 与 OpenAI 的连接？",
+    "gemini": "确定断开 Kog Cat 与 Gemini 的连接？",
+    "cta": "断开"
+  },
+  "chatModelEdit": {
+    "title": "编辑 Chat Model：{{id}}"
+  },
+  "addProvider": {
+    "title": "添加自定义 Provider",
+    "edit": "编辑 Provider：{{id}}",
+    "id": "ID",
+    "idDesc": "为该 provider 指定一个 ID，仅用于设置中识别。",
+    "idPlaceholder": "my-custom-provider",
+    "type": "Provider 类型",
+    "apiKey": "API 密钥",
+    "apiKeyDesc": "（无需则留空）",
+    "apiKeyPlaceholder": "输入 API 密钥",
+    "baseUrl": "Base URL",
+    "baseUrlDesc": "（使用默认值则留空；OpenAI-compatible 中转站通常以 /v1 结尾）",
+    "baseUrlPlaceholder": "例如：https://relay.example.com/v1",
+    "modelsHeader": "模型",
+    "modelsDesc": "在上方填好 key / base URL，然后拉取该 provider 提供的模型，勾选要用的。",
+    "modelsManualOnly": "在下方手动填写模型名称。",
+    "fetchModels": "获取模型",
+    "fetching": "获取中…",
+    "fetchFailed": "获取模型失败：{{message}}",
+    "fetchEmpty": "未返回任何模型。",
+    "testConnection": "测试",
+    "testing": "测试中…",
+    "testSucceeded": "已用 {{model}} 连接成功。",
+    "testFailed": "连接测试失败：{{message}}",
+    "testNeedsModel": "请先选择或输入一个模型再测试。",
+    "filterPlaceholder": "筛选模型…",
+    "selectedCount": "已选 {{count}} 个",
+    "manualModel": "手动添加模型",
+    "manualModelDesc": "仅在该 provider 无法列出模型时使用。这里必须填写实际发送给 provider API 的 model id。",
+    "manualModelPlaceholder": "例如：gpt-5.2 或 provider/model-name",
+    "manualModelFallback": "模型不在列表里？",
+    "manualModelFallbackDesc": "多数 provider 应优先使用获取模型。手动填写只作为 Azure、本地服务或无 models 端点中转站的兜底。",
+    "manualModelFallbackAction": "手动填写",
+    "advancedSettings": "高级",
+    "advancedSettingsDesc": "少数 provider gateway 的兼容选项。",
+    "showAdvancedSettings": "显示高级",
+    "hideAdvancedSettings": "隐藏高级",
+    "save": "保存",
+    "add": "添加",
+    "cancel": "取消"
+  },
+  "addChatModel": {
+    "title": "添加自定义 Chat 模型",
+    "id": "ID",
+    "idDesc": "为该模型指定一个 ID，仅用于设置中识别。",
+    "idPlaceholder": "my-custom-model",
+    "providerId": "Provider ID",
+    "modelName": "Model Name",
+    "modelNamePlaceholder": "输入模型名称",
+    "promptLevel": "Prompt 等级",
+    "promptLevelDesc": "选择 system prompt 的复杂度。对于会忽略用户问题、重复指令的小模型，请选择 \"simple\"。",
+    "add": "添加",
+    "cancel": "取消"
+  },
+  "addEmbeddingModel": {
+    "title": "添加自定义 Embedding 模型",
+    "id": "ID",
+    "idDesc": "为该模型指定一个 ID，仅用于设置中识别。",
+    "idPlaceholder": "my-custom-embedding-model",
+    "providerId": "Provider ID",
+    "modelName": "Model Name",
+    "modelNamePlaceholder": "输入模型名称",
+    "outputDimensions": "输出维度",
+    "outputDimensionsDesc": "可选。对支持 Matryoshka Representation Learning（MRL）的模型（如 OpenAI 的 text-embedding-3-* 或 Google 的 gemini-embedding-001），可以指定输出维度。留空则使用模型默认维度。",
+    "outputDimensionsPlaceholder": "例如：768",
+    "performanceWarning": {
+      "title": "性能警告",
+      "message": "该模型输出 {{dimension}} 维，但适合数据库索引的维度是：{{supported}}。\n\n继续可能导致检索性能下降。\n\n是否仍要继续？"
+    },
+    "errors": {
+      "invalidResult": "Embedding 模型返回了无效结果",
+      "dimensionMismatch": "请求的输出维度为 {{requested}}，但模型返回了 {{actual}} 维。该模型可能不支持自定义输出维度（Matryoshka Representation Learning）。请将「输出维度」留空以使用模型默认维度。",
+      "unknown": "出现未知错误"
+    },
+    "add": "添加",
+    "cancel": "取消"
+  },
+  "addMcpServer": {
+    "addTitle": "添加 MCP 服务器",
+    "editTitle": "编辑 MCP 服务器",
+    "name": "名称",
+    "nameDesc": "MCP 服务器的名称",
+    "namePlaceholder": "例如：'github'",
+    "parameters": "参数",
+    "parametersDesc": "用于运行 MCP 服务器的 JSON 配置。必须包含：\n- \"command\"：可执行文件名（例如 \"npx\"、\"node\"）\n- \"args\"：（可选）命令行参数数组\n- \"env\"：（可选）环境变量键值对",
+    "valid": "参数有效",
+    "errors": {
+      "nameRequired": "请填写名称",
+      "nameExists": "已存在同名服务器",
+      "parametersRequired": "请填写参数",
+      "invalidJson": "参数必须是有效 JSON",
+      "invalidJsonFormat": "JSON 格式无效",
+      "invalidParameters": "参数无效"
+    },
+    "save": "保存",
+    "cancel": "取消"
+  },
+  "template": {
+    "createTitle": "添加模板",
+    "editTitle": "编辑模板",
+    "nameLabel": "名称",
+    "nameDesc": "模板的名称",
+    "contentLabel": "模板内容",
+    "contentDesc": "模板的正文内容",
+    "namePlaceholder": "模板名称",
+    "contentPlaceholder": "模板内容",
+    "save": "保存",
+    "cancel": "取消",
+    "createCta": "创建",
+    "created": "模板已创建：{{name}}",
+    "updated": "模板已更新：{{name}}"
+  },
+  "installerUpdateRequired": {
+    "title": "Kog Cat 需要更新 Obsidian",
+    "message": "Kog Cat 需要更新版本的 Obsidian 安装器。注意这与 Obsidian 应用内的自动更新不同。你必须手动下载并安装最新版 Obsidian 才能继续使用 Kog Cat。",
+    "cta": "打开下载页"
+  },
+  "embeddingDbManage": {
+    "title": "管理 Embedding 数据库",
+    "loading": "加载中...",
+    "refresh": "刷新",
+    "lastUpdated": "最近更新：{{time}}",
+    "columns": {
+      "model": "模型",
+      "totalEmbeddings": "Embedding 总数",
+      "sizeMb": "大小 (MB)",
+      "actions": "操作"
+    },
+    "actions": {
+      "rebuild": "重建索引",
+      "remove": "移除索引"
+    }
+  },
+  "includedFiles": {
+    "title": "包含 {{count}} 个文件",
+    "noPatterns": "未指定包含模式 - 所有文件都将被包含（被排除模式匹配的除外）",
+    "empty": "没有文件匹配包含模式"
+  },
+  "excludedFiles": {
+    "title": "排除 {{count}} 个文件",
+    "empty": "没有文件匹配排除模式"
+  },
+  "connectPlan": {
+    "howItWorks": "操作步骤",
+    "step1": "在浏览器中登录",
+    "step2": "从跳转后的 URL 中复制授权码",
+    "step3": "粘贴到此处并点击「连接」",
+    "loginField": {
+      "name": "{{provider}} 登录",
+      "desc": "在浏览器中登录 {{provider}}。"
+    },
+    "loginButton": "登录 {{provider}}",
+    "codeField": {
+      "name": "授权码",
+      "desc": "粘贴从跳转后 URL 中获取的授权码。",
+      "placeholder": "粘贴授权码"
+    },
+    "submit": "连接",
+    "cancel": "取消"
+  },
+  "connectOpenAIPlan": {
+    "title": "连接 OpenAI 订阅",
+    "providerNotFound": "未找到 OpenAI Plan provider。",
+    "loginName": "OpenAI 登录",
+    "loginDesc": "在浏览器中登录 OpenAI。Kog Cat 会在你回来时自动连接。",
+    "loginButton": "登录 OpenAI",
+    "waitingTitle": "等待授权",
+    "waitingBody": "在浏览器中完成登录后回到这里",
+    "fallbackName": "回调 URL（备用）",
+    "fallbackDesc": "仅在自动连接失败时使用。粘贴浏览器地址栏中完整的回调 URL。",
+    "fallbackPlaceholder": "http://localhost:1455/auth/...",
+    "fallbackButton": "用 URL 连接",
+    "steps": {
+      "step1": "在浏览器中登录 OpenAI",
+      "step2": "Kog Cat 会在你回来时自动连接",
+      "step3": "若自动连接失败，将完整的回调 URL 粘贴到下方并点击「用 URL 连接」"
+    },
+    "errors": {
+      "autoFailed": "自动连接失败。将完整的回调 URL 粘贴到下方并点击「用 URL 连接」。",
+      "redirectMissing": "请粘贴浏览器地址栏中完整的回调 URL。",
+      "codeMissing": "找不到授权码。请粘贴浏览器地址栏中完整的回调 URL。",
+      "stateMissing": "找不到 OAuth state。请粘贴浏览器地址栏中完整的回调 URL。",
+      "stateMismatch": "OAuth state 不匹配。请重新登录并粘贴最新的回调 URL。",
+      "manualFailed": "手动连接失败。请重新登录并粘贴最新的回调 URL。"
+    }
+  },
+  "connectGeminiPlan": {
+    "title": "连接 Google AI 订阅",
+    "providerNotFound": "未找到 Gemini Plan provider。",
+    "loginName": "Gemini 登录",
+    "loginDesc": "在浏览器中登录 Google。Kog Cat 会在你回来时自动连接。",
+    "loginButton": "登录 Google",
+    "waitingTitle": "等待授权",
+    "waitingBody": "在浏览器中完成登录后回到这里",
+    "fallbackName": "回调 URL（备用）",
+    "fallbackDesc": "仅在自动连接失败时使用。粘贴浏览器地址栏中完整的回调 URL。",
+    "fallbackPlaceholder": "http://localhost:8085/oauth2callback?code=...",
+    "fallbackButton": "用 URL 连接",
+    "steps": {
+      "step1": "在浏览器中登录 Google",
+      "step2": "Kog Cat 会在你回来时自动连接",
+      "step3": "若自动连接失败，将完整的回调 URL 粘贴到下方并点击「用 URL 连接」"
+    },
+    "errors": {
+      "autoFailed": "自动连接失败。将完整的回调 URL 粘贴到下方并点击「用 URL 连接」。",
+      "redirectMissing": "请粘贴浏览器地址栏中完整的回调 URL。",
+      "codeMissing": "找不到授权码。请粘贴浏览器地址栏中完整的回调 URL。",
+      "stateMissing": "找不到 OAuth state。请粘贴浏览器地址栏中完整的回调 URL。",
+      "loginFirst": "请先点击「登录 Google」，然后再粘贴回调 URL。",
+      "stateMismatch": "OAuth state 不匹配。请重新登录并粘贴最新的回调 URL。",
+      "manualFailed": "手动连接失败。请重新登录并粘贴最新的回调 URL。"
+    }
+  },
+  "connectClaudePlan": {
+    "title": "连接 Claude 订阅",
+    "providerNotFound": "未找到 Claude Plan provider。"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "indexStatus": {
+    "idle": "vault 索引已就绪",
+    "indexing": "正在索引 vault…",
+    "rebuilding": "正在重建 vault 索引…",
+    "failed": "vault 索引失败"
+  }
+}

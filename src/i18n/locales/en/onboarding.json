@@ -1,0 +1,12 @@
+{
+  "preparing": "Preparing KogCat engine…",
+  "downloading": "Downloading KogCat engine…",
+  "downloadingProgress": "Downloading KogCat engine ({{version}}) — {{pct}}% ({{mb}}/{{totalMb}} MB)",
+  "registeringService": "Registering KogCat background service…",
+  "starting": "Starting KogCat engine…",
+  "ready": "KogCat engine ready",
+  "installFailed": "KogCat engine install failed: {{message}}",
+  "serviceRegisterFailed": "Failed to register background service: {{message}}",
+  "platformUnsupported": "Background service auto-registration not supported on platform ({{platform}})",
+  "statusAbnormal": "Abnormal status: {{kind}}"
+}

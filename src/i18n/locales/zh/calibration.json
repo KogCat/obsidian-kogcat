@@ -1,0 +1,54 @@
+{
+  "labels": {
+    "selection": "选区",
+    "paragraph": "当前段落",
+    "note": "整篇",
+    "demo": "示例"
+  },
+  "empty": {
+    "hint": "选中一段文字，按 Cmd/Ctrl+Shift+C 或右键校准。KogCat 只留下少数值得处理的点。"
+  },
+  "setup": {
+    "banner": "配置一个模型 provider 才能精修校准 —— 填好 API key 和 base URL，再选一个模型。",
+    "action": "配置 Provider"
+  },
+  "loading": {
+    "title": "正在校准「{{label}}」…",
+    "recall": "查找本地依据",
+    "refine": "整理成少数建议",
+    "shape": "准备可执行的处理方式"
+  },
+  "errors": {
+    "empty": "没有选中或可校准的文字。",
+    "engineNotReady": "KogCat 引擎尚未就绪，请稍候再试。",
+    "noResponse": "校准失败：引擎无响应。",
+    "reconnect": "重连引擎"
+  },
+  "mode": {
+    "capture": { "label": "记录" },
+    "summary": { "label": "复述" },
+    "claim": { "label": "判断" },
+    "action": { "label": "行动" }
+  },
+  "result": {
+    "nextStep": "可以这样处理：{{step}}",
+    "nextStepLabel": "可以这样处理：",
+    "noStrongPoints": "这次没有找到足够相关的校准点。KogCat 不为凑数展示弱关联内容。"
+  },
+  "source": {
+    "llm": "已用 {{model}} 精修",
+    "local": "本地基础结果，未经过 LLM 精修"
+  },
+  "actions": {
+    "copyAll": "复制"
+  },
+  "notice": {
+    "copiedAll": "已复制校准结果",
+    "copyFailed": "复制失败",
+    "reconnected": "引擎已连接 —— 请重试校准。"
+  },
+  "preview": {
+    "refineFailed": "这次只显示本地强信号，弱关联不会展示。",
+    "noModel": "连接模型后，KogCat 会把本地依据整理成更少、更明确的建议。"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Kog Cat",
+  "section": {
+    "engine": "Engine",
+    "answerMode": "Answer mode"
+  },
+  "answerMode": {
+    "quick": "Quick",
+    "advisor": "Advisor",
+    "off": "Off"
+  },
+  "engine": {
+    "running": "Running",
+    "stopped": "Stopped",
+    "starting": "Starting…",
+    "failed": "Failed",
+    "refresh": "Refresh",
+    "openLog": "Open log",
+    "restart": "Restart"
+  }
+}

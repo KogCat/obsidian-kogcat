@@ -1,0 +1,39 @@
+{
+  "history": {
+    "trigger": "Chat History",
+    "empty": "No conversations"
+  },
+  "header": {
+    "newChat": "New Chat",
+    "calibrationOn": "KogCat calibration: on",
+    "calibrationOff": "KogCat calibration: off",
+    "addImage": "Add image",
+    "chatWithVault": "Chat with vault",
+    "chatWithVaultTooltip": "Chat with your entire vault"
+  },
+  "input": {
+    "send": "Send message",
+    "stop": "Stop generation",
+    "placeholder": "Ask anything…"
+  },
+  "tool": {
+    "abort": "Abort",
+    "reject": "Reject",
+    "calling": "Calling tool…",
+    "result": "Result",
+    "status": {
+      "pendingApproval": "Call",
+      "rejected": "Rejected",
+      "running": "Running",
+      "success": "Called",
+      "error": "Failed",
+      "aborted": "Aborted"
+    }
+  },
+  "ribbon": {
+    "open": "Open Kog Cat"
+  },
+  "view": {
+    "title": "Kog Cat"
+  }
+}

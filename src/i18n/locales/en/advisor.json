@@ -1,0 +1,14 @@
+{
+  "card": {
+    "supplement": {
+      "title": "KogCat has an additional perspective",
+      "summary": "The answer is usable, but an important boundary or principle may be missing."
+    },
+    "caution": {
+      "title": "KogCat suggests reviewing this first",
+      "summary": "This answer may diverge from a long-term principle, boundary, or anti-pattern."
+    },
+    "view": "View KogCat Answer",
+    "hide": "Hide KogCat Answer"
+  }
+}
